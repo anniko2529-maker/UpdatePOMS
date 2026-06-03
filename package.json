@@ -1,0 +1,12 @@
+{
+  "name": "poms-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Realtime POMS monitoring dashboard for selected companies",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "port": 3000,
+  "pollIntervalSeconds": 60,
+  "staleThresholdMinutes": 180,
+  "alertCooldownMinutes": 120,
+  "recipients": [
+    "zatcharawan@thaioilgroup.com"
+  ],
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "secure": false,
+    "user": "anniko2529@gmail.com",
+    "pass": "*GMann27072529",
+    "from": "anniko2529@gmail.com"
+  }
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>POMS Dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>POMS Dashboard</h1>
+        <p>ติดตามข้อมูลบริษัทกลุ่ม TOP จาก POMS แบบอัปเดตอัตโนมัติ</p>
+      </div>
+      <button id="refreshBtn" type="button">Refresh</button>
+    </header>
+
+    <main>
+      <section class="summary" aria-label="ภาพรวม">
+        <div>
+          <span class="label">สถานะระบบ</span>
+          <strong id="systemStatus">กำลังโหลด</strong>
+        </div>
+        <div>
+          <span class="label">อัปเดต POMS ล่าสุด</span>
+          <strong id="lastSuccess">-</strong>
+        </div>
+        <div>
+          <span class="label">รายการ Alert</span>
+          <strong id="alertCount">0</strong>
+        </div>
+      </section>
+
+      <section id="alertPanel" class="alert-panel hidden"></section>
+      <section id="factoryGrid" class="factory-grid"></section>
+    </main>
+
+    <template id="factoryTemplate">
+      <article class="factory">
+        <div class="factory-head">
+          <img class="logo" alt="">
+          <div>
+            <h2></h2>
+            <p class="meta"></p>
+          </div>
+          <span class="freshness"></span>
+        </div>
+        <div class="chips"></div>
+        <div class="latest"></div>
+        <div class="readings"></div>
+      </article>
+    </template>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
