@@ -11,7 +11,7 @@
     "port": 587,
     "secure": false,
     "user": "anniko2529@gmail.com",
-    "pass": "*GMann27072529",
+    "pass": Gmail App Password,
     "from": "anniko2529@gmail.com"
   }
 }
